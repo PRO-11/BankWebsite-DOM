@@ -152,7 +152,7 @@ const handleReveal=function(e)
     })
 }
 //.section--hidden
-const section_obs=new IntersectionObserver(handleReveal,{root:null,threshold:0.25})
+const section_obs=new IntersectionObserver(handleReveal,{root:null,threshold:0.15})
 const allsection=document.querySelectorAll('.section');
 allsection.forEach(data=>{
     data.classList.add('section--hidden')
